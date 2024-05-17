@@ -1,0 +1,376 @@
+/* home.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Navigation Bar */
+.top-bar {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3; /* Set a higher z-index for the top bar */
+    width: 100%;
+}
+
+.top-bar .logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+}
+
+.top-bar .logo img {
+    max-width: 100px; /* Adjust the max width for visibility */
+    height: auto; /* Maintain aspect ratio */
+    align-items: center;
+}
+
+.top-bar a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+/* Add this to your existing CSS */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profile-container {
+    height: 55px; 
+    width: 55px;
+    border: 1px solid #555;
+    background-color: #555;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile-picture {
+    height: 50px; 
+    width: 50px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.user-name {
+    font-size: 16px;
+    color: #333; 
+    font-weight: bold; 
+    margin-left: 5px; 
+}
+
+/* sidebar */
+.sidebar {
+    width: 150px; 
+    background-color: #555;
+    color: #fff;
+    min-height: 100vh; 
+    position: fixed;
+    top: 40px; 
+    left: 0;
+    padding-top: 60px;
+    overflow-y: hidden;
+    transition: height 0.3s;
+}
+
+.sidebar:hover {
+    height: 100%; 
+    overflow-y: auto; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar a:hover {
+    background-color: #777;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-open {
+    width: 150px;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    background-color: #555;
+    z-index: 3;
+    transition: left 0.3s ease; /* Add a smooth transition for left property */
+  }
+
+  .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+/* Style the scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 4px; 
+  }
+  
+  /* Handle on hover */
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  }
+  
+  /* Set the color of the scrollbar handle */
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: #c7c7c7;
+    border-radius: 4px; 
+  }
+  
+  /* Set the color of the scrollbar track */
+  .sidebar::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+  
+  /* Add rounded corners to the scrollbar track */
+  .sidebar::-webkit-scrollbar-track {
+    border-radius: 8px;
+  }
+  
+
+/* Main Content */
+.main-content {
+    margin-left: 200px; 
+    padding: 20px;
+    padding-bottom: 20px;
+    scroll-padding-top: 10px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    z-index: 3; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* App Container Styles */
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.app {
+    width: 150px;
+    height: 150px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.app i {
+    font-size: 3em;
+}
+
+.app h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.app:hover {
+    background-color: #0056b3;
+}
+
+/* Feature Icons */
+.feature-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px; /* Adjust the gap between icons */
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-icon a {
+    text-decoration: none;
+    color: #333;
+}
+
+.feature-icon i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.feature-icon p {
+    font-size: 16px;
+}
+
+.feature-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Bottom Bar Styles */
+.bottom-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-menu li {
+    margin-right: 20px;
+}
+
+.bottom-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Styles for icons in the bottom menu */
+.bottom-menu li a i {
+    margin-right: 5px;
+}
+
+/* Account Dropdown Styles */
+.account-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.account-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    right: 0;
+    z-index: 1;
+}
+
+.account-dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.account-dropdown-content a i {
+    margin-right: 10px;
+}
+
+.account-dropdown:hover .account-dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%; 
+        box-sizing: border-box; 
+        text-align: center; 
+      }
+
+      .sidebar {
+        display: none;
+      }
+    
+      .logout-button {
+        display: none;
+      }
+    
+      .menu-icon {
+        display: block;
+        margin-right: 10px;
+      }
+    
+      .menu-toggle {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer; /* Add cursor style for better user experience */
+      }
+    
+      .menu-open {
+        width: 150px;
+        position: fixed;
+        top: 60px;
+        right: 10px;
+        background-color: #555;
+        z-index: 3;
+        transition: left 0.3s ease;
+      }
+  }
+  

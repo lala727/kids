@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="utf-8">
+		<title>Sign Up – PlayLearnKids</title>
+		<meta name="description" content="#">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap core CSS -->
+		<link href="../dist/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<!-- Swipe core CSS -->
+		<link href="../dist/css/swipe.min.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="../dist/css/style.css">
+		<!-- Favicon -->
+		<link href="../dist/images/logo1.png" type="image/png" rel="icon">
+	</head>
+	<body class="start">
+		<main>
+			<div class="layout">
+				<!-- Start of Sign Up -->
+				<div class="main order-md-2">
+					<div class="start">
+						<div class="container">
+							<div class="col-md-12">
+								<div class="content">
+									<h1>Add Admin</h1>
+									<form id="signup">
+										<div class="form-parent">
+											<div class="form-group">
+												<input type="text" id="inputFirstName" class="form-control" placeholder="First Name" required>
+												<button class="btn icon"><i class="material-icons">person_outline</i></button>
+											</div>
+											<div class="form-group">
+												<input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required>
+												<button class="btn icon"><i class="material-icons">person_outline</i></button>
+											</div>
+										</div>
+										<div class="form-parent">
+											<div class="form-group" id="gender">
+												<div class="form-control">
+													<label for="sex">Sex:</label>
+													<select name="sex" id="sex">
+														<option value="M">Male</option>
+														<option value="F">Female</option>
+													</select>
+												</div>
+												<button class="btn icon"><i class="material-icons">person_outline</i></button>
+											</div>
+											<div class="form-group" id="email">
+												<input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required>
+												<button class="btn icon"><i class="material-icons">mail_outline</i></button>
+											</div>
+										</div>
+										
+										<button type="submit" class="btn button signup">Add</button>
+										<!-- div for displaying success message -->
+										<div id="successMessage" class="success-message"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Sign Up -->
+			</div> <!-- Layout -->
+		</main>
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		
+		<script
+		src="../dist/js/vendor/jquery.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+		<script src="../dist/js/bootstrap.min.js"></script>
+		<script src="addUser.js"></script>
+		
+	</body>
+</html>

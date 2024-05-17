@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+    position: absolute;
+    left: 5px;
+}
+
+.right {
+    position: absolute;
+    right: 5px;
+}
+
+#flogo {
+    margin-bottom: 5px;
+}
+
+#flogo .logo {
+    display: flex;
+}
+
+#flogo .logo h2 {
+    color: white;
+}
+
+#flogo .logo a img {
+    width: 25px;
+    height: 25px;
+}

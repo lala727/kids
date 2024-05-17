@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutor Dashboard – PlayLearnKids</title>
+    <link rel="stylesheet" type="text/css" href="../dist/css/home.css">
+    <!-- Add font-awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Favicon -->
+	<link href="../dist/images/logo1.png" type="image/png" rel="icon">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-bar">
+        <div class="profile">
+          <div class="profile-container">
+            <a href="profile.html">
+            <img src="../dist//images/male_avatar.png" alt="User Profile Picture" class="profile-picture">
+            </a>
+          </div> 
+          <span class="user-name">Mike</span>
+        </div>    
+        <a href="#" class="menu-icon" id="mobile-menu-icon"><i class="fas fa-bars"></i></a>
+        <a href="adminSignin.html" class="logout-button">Logout</a>
+      </div>
+
+<!-- mobile menu -->
+<div class="mobile-menu">
+    <a href="home.php">Dashboard</a>
+    <a href="student.php">Students</a>
+    <a href="teachers.php">Teachers</a>
+    <a href="games.php">Games</a>
+    <a href="video.php">Videos</a>
+    <a href="posts.php">Posts</a>
+    <a href="messages.php">Messages</a>
+    <a href="calendar.php">Calendar</a>
+    <a href="Analytics.php">Analytics</a>
+    <a href="settings.php">Settings</a>
+    <a href="logout.php">Logout</a>
+</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar content goes here -->
+         <!-- Sidebar -->
+
+        <ul>
+            <li><a href="home.php"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="student.php"><i class="fas fa-user-graduate"></i> Students</a></li>
+            <li><a href="teachers.php"><i class="fas fa-chalkboard-teacher"></i> Teachers</a></li>
+            <li><a href="games.php"><i class="fas fa-gamepad"></i> Games</a></li>
+            <li><a href="video.php"><i class="fas fa-video"></i> Videos</a></li>
+            <li><a href="posts.php"><i class="fas fa-newspaper"></i> Posts</a></li>
+            <li><a href="messages.php"><i class="fas fa-comments"></i> Messages</a></li>
+            <li><a href="calendar.php"><i class="fas fa-calendar"></i> calendar</a></li>
+            <li><a href="Analytics.php"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+            <li><a href="settings.php"><i class="fas fa-cogs"></i> settings</a></li>
+
+
+        </ul>
+    </div>
+    
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Section -->
+        <div class="app-container">
+        <div class="app" id="addStudents">
+            <i class="fas fa-user-plus"></i>
+            <h3>Add Students</h3>
+        </div>
+            <div class="app">
+                <i class="fas fa-users"></i>
+                <h3>Students</h3>
+            </div>
+
+            <div class="app">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Add Teachers</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Teachers</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-gamepad"></i>
+                <h3>Games</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-video"></i>
+                <h3>Videos</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-newspaper"></i>
+                <h3>Posts</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-comments"></i>
+                <h3>Messages</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-calendar"></i>
+                <h3>calendar</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Analytics</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-cogs"></i>
+                <h3>Settings</h3>
+            </div>
+            <div class="app">
+                <i class="fas fa-question-circle"></i>
+                <h3>Help</h3>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 My Little Learners
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
