@@ -55,13 +55,25 @@ GNU General Public License v3.0
     - Email: admin@ut.com
     - Password: password
 
-## Steps to follow:
-Please carefully follow the steps to setup the school.
 
-**Role: Admin**
+**Screenshots**
+<h1 align="center"><img src="public/docs/imgs/ut/Screenshot (227).png"></h1>
+<h1 align="center"><img src="public/docs/imgs/ut/Screenshot (228).png"></h1>
 
-**School Dashboard**
-<h1 align="center"><img src="public/docs/imgs/ut/Screenshot 2021-12-07 at 01-27-05 Unifiedtransform.png"></h1>
+**Sign In**
+<h1 align="center"><img src="public/docs/imgs/ut/Screenshot (234).png"></h1>
+
+**Teacher's Dashboard**
+<h1 align="center"><img src="public/docs/imgs/ut/Screenshot (235).png"></h1>
+
+**Student's Dashboard**
+<h1 align="center"><img src="public/docs/imgs/ut/Screenshot (236).png"></h1>
+
+**Library**
+<h1 align="center"><img src="public/docs/imgs/ut/Screenshot (237).png"></h1>
+
+**Videos**
+<h1 align="center"><img src="public/docs/imgs/ut/Screenshot (238).png"></h1>
 
 
 
